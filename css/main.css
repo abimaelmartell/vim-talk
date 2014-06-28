@@ -1,0 +1,9 @@
+h2 {
+    text-transform: none !important;
+}
+
+img {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}

@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Introducción a VIM</title>
+        <title>Desarrollando con VIM</title>
 
         <meta name="description" content="presentación de introducción al editor VIM">
         <meta name="author" content="Abimael Martell">
@@ -15,7 +15,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="css/reveal.min.css">
-        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/theme/night.css" id="theme">
+        <link rel="stylesheet" href="css/main.css">
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -38,12 +39,213 @@
     <body>
         <div class="reveal">
             <div class="slides">
+
                 <section>
-                    <h1>Introducción a VIM</h1>
+                    <h1>Desarrollando con VIM</h1>
                     <h3></h3>
                     <p>
                         <small>por <a href="http://abimaelmartell.com">Abimael Martell</a> / <a href="http://twitter.com/abimaelmartell">@abimaelmartell</a></small>
                     </p>
+                </section>
+
+                <section>
+                    <h1>¿Qué es VIM?</h1>
+                    <h2>Un editor de texto</h2>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Historia</h1>
+                    </section>
+
+                    <section>
+                        <h2>ed</h2>
+                        <ul>
+                            <li>Editor en linea</li>
+                            <li>Primero en soportar expresiones regulares</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>ex</h2>
+                        <ul>
+                            <li>Mejor interfaz</li>
+                            <li>Mas opciones</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>vi</h2>
+                        <ul>
+                            <li>En pantalla</li>
+                            <li>Inicialmente creado como "plugin" para <i>ex</i></li>
+                            <li>Estándar en sistemas UNIX</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img src="img/vim-screen.png" alt="" />
+                    </section>                    
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Características</h1>
+                    </section>
+
+                    <section>
+                        <h1>Multiplataforma</h1>
+                        <img src="img/vim-windows.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h1>Soporte para muchos lenguajes</h1>
+                    </section>
+
+                    <section>
+                        <h2>Splits</h2>
+                        <img src="img/splits.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h2>vimdiff</h2>
+                    </section>
+
+                    <section>
+                        <h1>Configurable</h1>
+                        <img src="img/vimrc.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h1>Macros</h1>
+                    </section>
+
+                    <section>
+                        <h1>Temas</h1>
+                        <img src="img/schemes.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h1>Plugins</h1>
+                        <p>Vim tiene su propio lenguaje de script.</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>¿Cómo instalar?</h2>
+
+                    <pre><code class="bash">
+# Derivados de debian
+$ sudo apt-get install vim
+
+# OSX
+$ brew install macvim --override-system-vim
+
+# Windows
+# Descargar instalador desde www.vim.org
+                    </code></pre>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Ventajas de VIM sobre otros editores</h1>
+                    </section>
+
+                    <section>
+                        <h2>Ligero</h2>
+                        <p>Lo puedes usar en sistemas con recursos limitados.</p>
+                    </section>
+
+                    <section>
+                        <h2>Portable</h2>
+                        <p>Puedes usar las mismas configuraciones en todas tus computadoras.</p>
+                    </section>
+
+                    <section>
+                        <h2>Minimalista</h2>
+                        <p>Solo texto.</p>
+                    </section>
+
+                    <section>
+                        <h2>Está en cualquier lugar</h2>
+                        <p>Desde computadoras personales hasta servidoes.</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Plugins</h1>
+                    </section>
+
+                    <section>
+                        <h2>CtrlP</h2>
+                        <img src="img/ctrlp.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h2>Fugitive</h2>
+                        <p>Wrapper de Git en VIM</p>
+                    </section>
+
+                    <section>
+                        <h2>Syntastic</h2>
+                        <img src="img/syntastic.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h2>NERD Tree</h2>
+                        <img src="img/nerd-tree.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h2>Tagbar</h2>
+                        <img src="img/tagbar.png" alt="" />
+                    </section>
+
+                    <section>
+                        <h2>You Complete Me</h2>
+                        <img src="img/youcompleteme.gif" alt="" />
+                    </section>
+                </section>
+
+                <section>
+                    <h1>Cómo iniciarse</h1>
+                    <p>Instala alguna distribución.</p>
+                    <pre><code>
+$ curl -Lo- https://bit.ly/janus-bootstrap | bash
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1>Enserio</h1>
+                    <ul>
+                        <li>Crea tu propio .vimrc</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Consideraciones</h1>
+                    <ul>
+                        <li>Toma tu tiempo</li>
+                        <li>Experimente</li>
+                        <li>Sé productivo</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Recursos</h2>
+
+                    <ul>
+                        <li><a href="http://vim-adventures.com/">Vim Adventures</a></li>
+                        <li><a href="http://vimawesome.com/">Vim Awesome</a></li>
+                        <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+                        <li>$ vimtutor</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>:q</h1>
+                    <p>Usar en caso de emergencia.</p>
                 </section>
             </div>
         </div>
